@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script
+      src="https://kit.fontawesome.com/665b1e9e47.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>JS-project2</title>
+</head>
+<body >
+       <div  style="display: flex;" id="overlap">
+       <div id="blur">
+         <header id="sends">
+            <div class="dis">
+               <h1>TASKS </h1>
+               <span>&nbsp;LIST</span>
+               <span id="icon" onclick="openPopup()"> <i class="fa fa-plus-circle" style="font-size:36px">&nbsp;&nbsp;</i>ADD ITEM</span>
+            </div>
+            <p id="remove">No items in the List</p>
+           </header>
+        
+         <div  id="cards">
+          
+               <ul type="none" id="plan" >
+
+                  <li></li>
+               </ul>
+               
+
+            
+         </div>
+       </div>
+
+         <div id="popup">
+            <div class="innerpopup">
+               <h2>Add New List</h2>
+               <input type="text" placeholder="Add New List" id="textdata" name=""><br><br><br>
+               <input type="button" value="Add" id="add" onclick="cardspopup()">
+               <input type="button" value="Close" id="close" onclick="closePopup()">
+            </div>
+         </div>
+         <div id="popup1">
+            <div class="innerpopup1">
+               <h2>Add New List</h2>
+               <input type="text" placeholder="Add New List" id="textdata1" name=""><br><br><br>
+               <input type="button" value="Add" id="add1" onclick="newElement1(this)">
+               <input type="button" value="Close" id="close1" onclick="closePopup1()">
+            </div>
+         </div>
+        
+
+      </div>
+      <div id="window">
+         
+         <i class="fa fa-arrow-circle-left" style="font-size:36px;color: aliceblue;"  id="firstwindow" onclick="backtowindow()"><span>Back</span> </i>                          
+             <span id="icon" onclick="openPopup()" > <i class="fa fa-plus-circle" style="font-size:36px" ></i></span>
+      
+         <h2 id="windowdata" style="text-align: center; color: white;"></h2> 
+         <pre style="justify-content: center;" id="windowcard">
+
+         </pre>
+         
+      </div>
+      
+
+         <script src="./script.js"></script>
+</body>
+</html>
